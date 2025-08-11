@@ -1,38 +1,76 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio Wireframe</title>
+  <title>Portfolio Website</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <div class="collapse navbar-collapse">
-          <ul class="navbar-nav mx-auto">          
-          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Certifications</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<!--NAV BAR-->
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="logo_nobg.png" alt="Logo" width="40" height="40" class="me-2">
+    </a>
 
-  <div class="container mt-5">
-    <div class="row align-items-center">
-      <div class="col-md-6 text-center">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWvA9gTXJRDe9aPqmb-4hko5pVf1NBpPyw_w&s" class="img-fluid rounded-circle" alt="NYC image">
-      </div>
-      <div class="col-md-6">
-        <h2>Welcome!</h2>
-        <p>Introduction into my coding journey...</p>
-      </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="design.html">Features</a>
+        </li>
+      </ul>
     </div>
   </div>
+</nav>
 
-  <footer class="bg-light text-center py-4 mt-5">
+
+  <div class="container text-center py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <h1>Hi, I'm Ayesha!</h1>
+  <div class="container mt-5">
+  <div class="row align-items-center">
+    <div class="col-md-8">
+      <h2>About Me</h2>
+      <ul>
+        <li>I am a rising senior with a passion for technology.</li>
+        <li>A few of my skills include HTML, CSS, JavaScript, and Python.</li>
+        <li>I also use VSCode and GitHub to create and store my projects. </li>
+        <li>My interests include badminton, crochet, and coding.</li>
+        <li>In the future, I plan on pursuing a bachelor's in CS and work in a sector which combines medicine and tech.</li>
+      </ul>
+    </div>
+
+    <div class="col-md-4 text-center">
+      <button class="btn btn-custom" onclick="location.href='https://github.com/ayesha-888'">
+        View My GitHub Profile
+      </button>
+    </div>
+  </div>
+</div>
+
+      <button id="invertBtn" class="btn btn-secondary position-absolute top-0 end-0 m-3">
+  Invert Colors
+</button>
+    </div>
+    <div class="col-md-6 text-center">
+    </div>
+  </div>
+</div>
+
+
+  <footer class="text-center py-4 mt-5 custom-footer">
     <h4>Contact Me!  📧</h4>
+    <p><a href="mailto:ayeshadaft@gmail.com">ayeshadaft@gmail.com</a></p>
   </footer>
+
+<script src=script.js></script>
 </body>
 </html>
