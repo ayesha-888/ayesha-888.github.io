@@ -53,8 +53,16 @@ color: #002147 !important;
 color: #002147 !important;
 }
 
+.color-label {
+color: #e5e4e2 !important;
+}
+
+.inverted .color-label {
+color: #002147 !important;
+}
+
 .custom-navbar {
-background-color: #00152e !important;
+background-color: #00152e;
 }
 
 .custom-footer {
